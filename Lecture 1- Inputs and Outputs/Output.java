@@ -16,6 +16,9 @@ public class Output {
         System.out.println("Hello");
         System.out.println("World");
         printPatern(5);
+        int a = 32;
+        double b = 3.4;
+        System.out.println(String.format("Here is the answer==>> "+a+" and "+b));
     }
 
 }
