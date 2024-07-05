@@ -12,13 +12,36 @@ public abstract class IFELSE {
         //     System.out.println("Wellcome to the club!");
         // }
         // sc.close();
+
+
+        ////////////////////////////////////////////////////////////
+
+        
+        // Scanner sc = new Scanner(System.in);
+        // System.out.print("Enter a number: ");
+        // int n = sc.nextInt();
+        // if(n%2 == 0){
+        //     System.out.println("Even");
+        // }else{
+        //     System.out.println("Odd");
+        // }
+        // sc.close();
+
+
+        ////////////////////////////////////////////////////////////
+
+
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number: ");
-        int n = sc.nextInt();
-        if(n%2 == 0){
-            System.out.println("Even");
+        int a = sc.nextInt();
+        System.out.print("Enter a number: ");
+        int b = sc.nextInt();
+        if(a == b){
+            System.out.println("Equal");
+        }else if(a > b){
+            System.out.println("First is greater");
         }else{
-            System.out.println("Odd");
+            System.out.println("Second is greater");
         }
         sc.close();
     }
