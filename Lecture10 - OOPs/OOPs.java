@@ -1,12 +1,12 @@
-
+import bank.Account;
 
 
 
 public class OOPs {
     public static void main(String[] args) {
-        Pen p= new Pen();
-        p.color = "red";
-        p.type = "ballpen";
+        // Pen p= new Pen();
+        // p.color = "red";
+        // p.type = "ballpen";
         // p.display();
 
         // Human h1 = new Human("Faraz Ahmad", 18);
@@ -18,10 +18,17 @@ public class OOPs {
         // h2.displayInfo();
 
         // Learning Polymorphism
-        ShapeConstructor sc = new ShapeConstructor();
-        sc.printShape();
-        sc.printShape(23);
-        sc.printShape("Hello");
+        // ShapeConstructor sc = new ShapeConstructor();
+        // sc.printShape();
+        // sc.printShape(23);
+        // sc.printShape("Hello");
+
+        // Account a = new Account("Faraz");
+        // a.printInfo();
+
+        Horse h = new Horse();
+        h.walk();
+        h.eats();
 
     }
 
@@ -30,6 +37,28 @@ public class OOPs {
      * also 
      * a comment!
      */
+}
+
+// Abstraction
+
+abstract class Animal {
+    abstract void walk();
+    public void eats(){
+        System.out.println("It eats");
+    }
+}
+
+
+class Horse extends Animal{
+    public void walk(){
+        System.out.println("Horse walks on 4 legs");
+    }
+}
+
+class Hen extends Animal {
+    public void walk(){
+        System.out.println("Hen walks on 2 legs");
+    }
 }
 
 
@@ -114,6 +143,12 @@ class ShapeConstructor{
 
     
 }
+
+
+
+
+
+
 
 
 
