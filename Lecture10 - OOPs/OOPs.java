@@ -26,9 +26,9 @@ public class OOPs {
         // Account a = new Account("Faraz");
         // a.printInfo();
 
-        Horse h = new Horse();
-        h.walk();
-        h.eats();
+        // Horse h = new Horse();
+        // h.walk();
+        // h.eats();
 
     }
 
@@ -41,25 +41,25 @@ public class OOPs {
 
 // Abstraction
 
-abstract class Animal {
-    abstract void walk();
-    public void eats(){
-        System.out.println("It eats");
-    }
-}
+// abstract class Animal {
+//     abstract void walk();
+//     public void eats(){
+//         System.out.println("It eats");
+//     }
+// }
 
 
-class Horse extends Animal{
-    public void walk(){
-        System.out.println("Horse walks on 4 legs");
-    }
-}
+// class Horse extends Animal{
+//     public void walk(){
+//         System.out.println("Horse walks on 4 legs");
+//     }
+// }
 
-class Hen extends Animal {
-    public void walk(){
-        System.out.println("Hen walks on 2 legs");
-    }
-}
+// class Hen extends Animal {
+//     public void walk(){
+//         System.out.println("Hen walks on 2 legs");
+//     }
+// }
 
 
 
@@ -143,6 +143,33 @@ class ShapeConstructor{
 
     
 }
+
+
+
+
+
+// Pure Abstraction -- Interfaces;
+
+
+/**
+ * Animal
+ */
+interface Animal {
+    public void walk();
+}
+
+interface Herbivour{
+
+}
+
+class Horse implements Animal, Herbivour{
+    public void walk(){
+        System.out.println("Horse walks on 4 legs");
+    }
+}
+
+
+
 
 
 
